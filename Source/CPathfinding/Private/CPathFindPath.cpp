@@ -19,12 +19,12 @@ CPathAStar::CPathAStar()
 
 CPathAStar::CPathAStar(ACPathVolume* VolumeRef, FVector Start, FVector End, uint32 SmoothingPasses, int32 UserData, float TimeLimit)
 	:
-	Volume(VolumeRef),
 	PathStart(Start),
 	PathEnd(End),
 	Smoothing(SmoothingPasses),
 	UsrData(UserData),
-	SearchTimeLimit(TimeLimit)
+	SearchTimeLimit(TimeLimit),
+	Volume(VolumeRef)
 {
 }
 
